@@ -1,0 +1,15 @@
+{
+  "name": "kalinux-remote_storage_adapter",
+  "version": "0.1.0",
+  "author": "kalinux",
+  "summary": "Prometheus Puppet Remote Storage Adapter",
+  "license": "Apache-2.0",
+  "source": "",
+  "project_page": "prometheus.io",
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
