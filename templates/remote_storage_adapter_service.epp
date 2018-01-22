@@ -14,7 +14,7 @@ ExecStart=<%= $remote_storage_adapter::config::binary_path %>/remote_storage_ada
 <% unless $remote_storage_adapter::config::graphite_transport =~ Undef { -%>
 -graphite-transport="<%= $remote_storage_adapter::config::graphite_transport %>"
 <% } -%> \
-<% unless $remote_storage_adapter::config::influxdb_url) =~ Undef { -%>
+<% unless $remote_storage_adapter::config::influxdb_url =~ Undef { -%>
 -influxdb-url="<%= $remote_storage_adapter::config::influxdb_url %>"
 <% } -%> \
 <% unless $remote_storage_adapter::config::influxdb_database =~ Undef { -%>
