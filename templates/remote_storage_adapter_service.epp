@@ -11,35 +11,35 @@ ExecStart=<%= $remote_storage_adapter::config::binary_path %>/remote_storage_ada
 trustedkey <%= $keys_trusted.join(' ') %>
 
 <% unless $remote_storage_adapter::config::graphite_address =~ Undef -%>
--graphite-address="<%= $remote_storage_adapter::config::graphite_address %>" \
-<% end -%>
+-graphite-address="<%= $remote_storage_adapter::config::graphite_address %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::graphite_prefix =~ Undef -%>
--graphite-prefix="<%= $remote_storage_adapter::config::graphite_prefix %>" \
-<% end -%>
+-graphite-prefix="<%= $remote_storage_adapter::config::graphite_prefix %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::graphite_transport =~ Undef -%>
--graphite-transport="<%= $remote_storage_adapter::config::graphite_transport %>" \
-<% end -%>
+-graphite-transport="<%= $remote_storage_adapter::config::graphite_transport %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::influxdb_url) =~ Undef -%>
--influxdb-url="<%= $remote_storage_adapter::config::influxdb_url %>" \
-<% end -%>
+-influxdb-url="<%= $remote_storage_adapter::config::influxdb_url %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::influxdb_database =~ Undef -%>
--influxdb.database="<%= $remote_storage_adapter::config::influxdb_database %>" \
-<% end -%>
+-influxdb.database="<%= $remote_storage_adapter::config::influxdb_database %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::influxdb_retention =~ Undef -%>
--influxdb.retention-policy="<%= $remote_storage_adapter::config::influxdb_retention %>" \
-<% end -%>
+-influxdb.retention-policy="<%= $remote_storage_adapter::config::influxdb_retention %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::influxdb_username =~ Undef -%>
--influxdb.username="<%= $remote_storage_adapter::config::influxdb_username %>" \
-<% end -%>
+-influxdb.username="<%= $remote_storage_adapter::config::influxdb_username %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::opentsdb_url =~ Undef -%>
--opentsdb-url="<%= $remote_storage_adapter::config::opentsdb_url %>" \
-<% end -%>
+-opentsdb-url="<%= $remote_storage_adapter::config::opentsdb_url %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::send_timeout =~ Undef -%>
--send-timeout="<%= $remote_storage_adapter::config::send_timeout %>" \
-<% end -%>
+-send-timeout="<%= $remote_storage_adapter::config::send_timeout %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::web_listen_address =~ Undef -%>
--web.listen-address="<%= $remote_storage_adapter::config::web_listen_address %>" \
-<% end -%>
+-web.listen-address="<%= $remote_storage_adapter::config::web_listen_address %>"
+<% end -%> \
 <% unless $remote_storage_adapter::config::web_telemetry_path =~ Undef -%>
--web.telemetry-path="<%= $remote_storage_adapter::config::web_telemetry_path %>" \
+-web.telemetry-path="<%= $remote_storage_adapter::config::web_telemetry_path %>"
 <% end -%>
