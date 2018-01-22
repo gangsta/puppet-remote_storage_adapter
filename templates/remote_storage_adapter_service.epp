@@ -29,7 +29,7 @@ ExecStart=<%= $remote_storage_adapter::config::binary_path %>/remote_storage_ada
 <% unless $remote_storage_adapter::config::opentsdb_url =~ Undef { -%>
 -opentsdb-url="<%= $remote_storage_adapter::config::opentsdb_url %>"
 <% } -%> \
-<% unless $remote_storage_adapter::config::s}_timeout =~ Undef { -%>
+<% unless $remote_storage_adapter::config::send_timeout =~ Undef { -%>
 -s}-timeout="<%= $remote_storage_adapter::config::s}_timeout %>"
 <% } -%> \
 <% unless $remote_storage_adapter::config::web_listen_address =~ Undef { -%>
