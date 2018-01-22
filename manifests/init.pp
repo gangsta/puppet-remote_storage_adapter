@@ -61,21 +61,21 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class remote_storage_adapter (
-graphite_address          = undef,
-graphite_prefix           = undef,
-graphite_transport        = undef,
-influxdb_url              = undef,
-influxdb_database         = undef,
-influxdb_retention_policy = undef,
-influxdb_username         = undef,
-opentsdb_url              = undef,
-send_timeout              = undef,
-web_listen_address        = undef,
-web_telemetry_path        = undef,
-binary_path               = '/usr/sbin',
-service_ensure            = 'running',
-service_enable            = true,
-manage_service            = true,
+  graphite_address          = undef,
+  graphite_prefix           = undef,
+  graphite_transport        = undef,
+  influxdb_url              = undef,
+  influxdb_database         = undef,
+  influxdb_retention_policy = undef,
+  influxdb_username         = undef,
+  opentsdb_url              = undef,
+  send_timeout              = undef,
+  web_listen_address        = undef,
+  web_telemetry_path        = undef,
+  binary_path               = '/usr/sbin',
+  service_ensure            = 'running',
+  service_enable            = true,
+  manage_service            = true,
 ){
 
   anchor {'remote_storage_adapter_first': }
