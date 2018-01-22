@@ -5,36 +5,36 @@ Description=Prometheus Monitoring Influxdb adapter
 User=prometheus
 Group=prometheus
 ExecStart=<%= $remote_storage_adapter::config::binary_path %>/remote_storage_adapter \
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::graphite_address) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::graphite_address) -%>
 -graphite-address="<%= $remote_storage_adapter::config::graphite_address %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::graphite_prefix) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::graphite_prefix) -%>
 -graphite-prefix="<%= $remote_storage_adapter::config::graphite_prefix %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::graphite_transport) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::graphite_transport) -%>
 -graphite-transport="<%= $remote_storage_adapter::config::graphite_transport %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::influxdb_url) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::influxdb_url) -%>
 -influxdb-url="<%= $remote_storage_adapter::config::influxdb_url %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::influxdb_database) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::influxdb_database) -%>
 -influxdb.database="<%= $remote_storage_adapter::config::influxdb_database %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::influxdb_retention) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::influxdb_retention) -%>
 -influxdb.retention-policy="<%= $remote_storage_adapter::config::influxdb_retention %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::influxdb_username) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::influxdb_username) -%>
 -influxdb.username="<%= $remote_storage_adapter::config::influxdb_username %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::opentsdb_url) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::opentsdb_url) -%>
 -opentsdb-url="<%= $remote_storage_adapter::config::opentsdb_url %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::send_timeout) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::send_timeout) -%>
 -send-timeout="<%= $remote_storage_adapter::config::send_timeout %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::web_listen_address) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::web_listen_address) -%>
 -web.listen-address="<%= $remote_storage_adapter::config::web_listen_address %>" \
 <% end -%>
-<% unless [nil, :undefined, :undef, ''].include?($remote_storage_adapter::config::web_telemetry_path) -%>
+<% unless [nil, undefined, undef, ''].include?($remote_storage_adapter::config::web_telemetry_path) -%>
 -web.telemetry-path="<%= $remote_storage_adapter::config::web_telemetry_path %>" \
 <% end -%>
