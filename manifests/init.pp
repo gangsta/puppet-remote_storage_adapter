@@ -69,7 +69,7 @@ class remote_storage_adapter (
   $influxdb_retention_policy = undef,
   $influxdb_username         = undef,
   $opentsdb_url              = undef,
-  $send_timeout              = undef,
+  $send_timeout              = '30s',
   $web_listen_address        = undef,
   $web_telemetry_path        = undef,
   $binary_path               = '/usr/sbin',
